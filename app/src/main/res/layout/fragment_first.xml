@@ -1,12 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/teal_700">
+    android:background="@color/teal_700"
+    android:orientation="vertical"
+    android:gravity="center">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/firstFragmentFirstNameET"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/ic_launcher_background"/>
+        android:hint="Firstname"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/firstFragmentLastNameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lastname"/>
+
+    <EditText
+        android:id="@+id/firstFragmentGPAET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="GPA" />
+
+    <Button
+        android:id="@+id/goToProfileFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ok" />
+
+    <Button
+        android:id="@+id/goToListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="List Fragment" />
+
+</LinearLayout>
